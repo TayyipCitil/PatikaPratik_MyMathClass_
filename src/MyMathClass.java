@@ -16,7 +16,7 @@ public class MyMathClass {
     }
 
     static double flooor(double num) {
-        int floor = 0;
+        int floor;
         if (num < 0) {
             if (num == (int) num) {
                 floor = (int) num;
@@ -30,7 +30,7 @@ public class MyMathClass {
     }
 
     static double ceill(double num) {
-        int ceil = 0;
+        int ceil;
         if (num > 0) {
             if (num == (int) num) {
                 ceil = ((int) num);
@@ -44,7 +44,7 @@ public class MyMathClass {
     }
 
     static int roundd(double num) {
-        int round = 0;
+        int round;
         if (num >= 0) {//num pozitif
             if ((int) num != (int) (num + 0.5)) { //ondalıklı kısım 0.5 den büyük veya eşit
                 round = (int) num + 1;
